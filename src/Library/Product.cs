@@ -12,6 +12,7 @@ namespace Recipies
     public class Product : IJsonConvertible
     {
         [JsonConstructor]
+        public Product() {}
         public Product(string description, double unitCost)
         {
             this.Description = description;
