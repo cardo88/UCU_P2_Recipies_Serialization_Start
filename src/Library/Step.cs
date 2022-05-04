@@ -12,6 +12,7 @@ namespace Recipies
     public class Step : IJsonConvertible
     {
         [JsonConstructor]
+        public Step() {}
         public Step(Product input, double quantity, Equipment equipment, int time)
         {
             this.Quantity = quantity;
